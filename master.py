@@ -81,13 +81,13 @@ class SiteMapBuilder:
         # Сохранение карты в файл
         parsed_url = urlparse(self.url)
         filename = parsed_url.netloc + '.txt'
-        with open(filename, 'w') as f:
+        with open('data/'+filename, 'w') as f:
             for page in self.pages:
                 f.write(page + '\n')
 
         data = [[self.url, f"{end_time-start_time:.{2}f}", len(self.pages), filename]]
         fieldnames = ['URL сайта', 'Время обработки', 'Кол-во найденных ссылок', 'Имя файла с результатом']
-        with open('summary.csv', 'a', newline='') as csvfile:
+        with open('data/summary.csv', 'a', newline='') as csvfile:
             writer = csv.writer(csvfile, delimiter=',')
             if csvfile.tell() == 0:
                 writer.writerow(fieldnames)
