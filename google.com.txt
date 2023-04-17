@@ -1,0 +1,7 @@
+http://google.com/intl/nl/about.html
+http://google.com/intl/nl/policies/terms/
+http://google.com/intl/nl/policies/privacy/
+http://google.com/advanced_search?hl=nl&authuser=0
+http://google.com/preferences?hl=nl
+http://google.com/
+http://google.com/intl/nl/ads/
